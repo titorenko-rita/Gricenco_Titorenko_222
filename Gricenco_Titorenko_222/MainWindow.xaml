@@ -1,0 +1,39 @@
+﻿<Window x:Class="Gricenco_Titorenko_222.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Gricenco_Titorenko_222"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid Margin="10">
+        <!-- Изображение с формулой -->
+        <Image Source="\Resourses\Equation.jpg"
+       ToolTip="Функция."
+       HorizontalAlignment="Left" VerticalAlignment="Top"
+       Width="200" Height="100" />
+
+        <!-- Поля для ввода x и m -->
+        <Label Content="Введите x:" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="220,10,0,0" />
+        <TextBox Name="InputX" ToolTip="Введите значение x." HorizontalAlignment="Left" VerticalAlignment="Top" Margin="300,10,0,0" Width="100" />
+
+        <Label Content="Введите m:" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="220,50,0,0" />
+        <TextBox Name="InputM" ToolTip="Введите значение m." HorizontalAlignment="Left" VerticalAlignment="Top" Margin="300,50,0,0" Width="100" />
+
+        <!-- Выбор функции f(x) -->
+        <Label Content="Выберите функцию f(x):" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="10,120,0,0" />
+        <StackPanel Orientation="Vertical" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="20,150,0,0">
+            <RadioButton Name="SinhButton" ToolTip="f(x) = гиперболический синус x" Content="sh(x)" IsChecked="True" />
+            <RadioButton Name="SquareButton" ToolTip="f(x) = x²" Content="x²" />
+            <RadioButton Name="ExpButton" ToolTip="f(x) = eˣ" Content="eˣ" />
+        </StackPanel>
+
+        <!-- Кнопки -->
+        <Button Name="CalculateButton" Content="Вычислить" ToolTip="Найти значение функции." HorizontalAlignment="Left" VerticalAlignment="Top" Margin="220,150,0,0" Width="100" Click="CalculateButton_Click"/>
+        <Button Name="ClearButton" Content="Очистить" ToolTip="Очистить введенные данные." HorizontalAlignment="Left" VerticalAlignment="Top" Margin="340,150,0,0" Width="100" Click="ClearButton_Click"/>
+
+        <!-- Поле вывода результата -->
+        <Label Content="Результат:" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="10,240,0,0" />
+        <TextBox Name="ResultBox" ToolTip="Значение функции при указанных данных." HorizontalAlignment="Left" VerticalAlignment="Top" Margin="100,240,0,0" Width="200" IsReadOnly="True" />
+    </Grid>
+</Window>
