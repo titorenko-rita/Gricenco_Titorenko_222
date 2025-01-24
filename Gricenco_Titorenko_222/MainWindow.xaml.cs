@@ -93,7 +93,6 @@ namespace Gricenco_Titorenko_222
             ResultBox.Clear();
             SinhButton.IsChecked = true;
         }
-
         protected override void OnClosing(System.ComponentModel.CancelEventArgs e)
         {
             var result = MessageBox.Show("Вы уверены, что хотите выйти?", "Подтверждение выхода", MessageBoxButton.YesNo, MessageBoxImage.Question);

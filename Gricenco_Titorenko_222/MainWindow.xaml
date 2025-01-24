@@ -16,7 +16,6 @@
         <!-- Поля для ввода x и m -->
         <Label Content="Введите x:" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="220,10,0,0" />
         <TextBox Name="InputX" ToolTip="Введите значение x." HorizontalAlignment="Left" VerticalAlignment="Top" Margin="300,10,0,0" Width="100" />
-
         <Label Content="Введите m:" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="220,50,0,0" />
         <TextBox Name="InputM" ToolTip="Введите значение m." HorizontalAlignment="Left" VerticalAlignment="Top" Margin="300,50,0,0" Width="100" />
 
